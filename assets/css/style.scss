@@ -1,0 +1,109 @@
+html {
+    font-size: 100%;
+    line-height: 19px;
+    font-family: 'Oranienbaum', serif;
+    font-weight: 300;
+}
+  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Переменные
+
+$black: #151310;
+$border_color: #CCCCCC;
+
+  
+svg, img {
+    display: block;
+}
+  
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.calc__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 45px;
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: $black;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #151310;
+    font-weight: 300;
+}
+
+.section {
+    &__header {
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        line-height: 24px;
+        color: #000000;
+    }
+}
+
+///////////////////////////////////////
+
+.calc__header {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+    &__wrapper {
+        width: 315px;
+    }
+
+    &__block {
+        width: 80px;
+        height: 28px;
+        padding: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 2px solid $border_color;
+
+        & input {
+            width: 85px;
+            height: 25px;
+            padding: 6px;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+    &__value {
+        font-family: 'Inter';
+    }
+}
+
+.input__minus, .input__plus {
+    cursor: pointer;
+}
